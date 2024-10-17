@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="15dp"
     android:layout_marginVertical="15dp"
-    tools:context=".view.HomeFragment">
+    tools:context=".presentation.home.HomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNotes"
@@ -23,12 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        app:fabCustomSize="70dp"
-        app:maxImageSize="40dp"
         android:clickable="true"
         android:contentDescription="@string/fabAdd"
         android:focusable="true"
         android:src="@drawable/ic_add"
+        app:fabCustomSize="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="40dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

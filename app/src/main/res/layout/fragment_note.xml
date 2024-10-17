@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="15dp"
     android:layout_marginVertical="15dp"
-    tools:context=".view.NoteFragment">
+    tools:context=".presentation.note.NoteFragment">
 
     <EditText
         android:id="@+id/etTitle"
@@ -30,11 +30,11 @@
         android:layout_marginStart="5dp"
         android:background="@null"
         android:ems="10"
+        android:gravity="start"
         android:hint="@string/etBody"
         android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:textSize="15sp"
-        android:gravity="start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,12 +46,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        app:fabCustomSize="70dp"
-        app:maxImageSize="40dp"
         android:clickable="true"
         android:contentDescription="@string/fabAdd"
         android:focusable="true"
         android:src="@drawable/ic_save"
+        app:fabCustomSize="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="40dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

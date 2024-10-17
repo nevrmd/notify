@@ -1,4 +1,4 @@
-package com.nevrmd.notify.view
+package com.nevrmd.notify.presentation
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

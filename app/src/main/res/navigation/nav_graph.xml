@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.nevrmd.notify.view.HomeFragment"
+        android:name="com.nevrmd.notify.presentation.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/noteFragment"
-        android:name="com.nevrmd.notify.view.NoteFragment"
+        android:name="com.nevrmd.notify.presentation.note.NoteFragment"
         android:label="fragment_note"
         tools:layout="@layout/fragment_note">
         <action
@@ -34,15 +34,15 @@
             app:exitAnim="@android:anim/fade_out" />
         <argument
             android:name="title"
-            app:argType="string"
-            android:defaultValue="Title" />
+            android:defaultValue=""
+            app:argType="string" />
         <argument
             android:name="body"
-            app:argType="string"
-            android:defaultValue="Body" />
+            android:defaultValue=""
+            app:argType="string" />
         <argument
             android:name="id"
-            app:argType="integer"
-            android:defaultValue="-1" />
+            android:defaultValue="-1"
+            app:argType="integer" />
     </fragment>
 </navigation>

@@ -1,12 +1,12 @@
-package com.nevrmd.notify.persistence
+package com.nevrmd.notify.data.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.nevrmd.notify.model.Note
+import com.nevrmd.notify.domain.NoteEntity
 
-@Database([Note::class], version = 1)
+@Database([NoteEntity::class], version = 1)
 abstract class NoteDatabase : RoomDatabase() {
     abstract val noteDao: NoteDao
     companion object {
